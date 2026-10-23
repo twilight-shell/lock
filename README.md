@@ -61,10 +61,12 @@ on one output and locks nothing.
 
 ## Settings
 
-`~/.config/twilight-shell/lock.toml`:
+`~/.config/twilight-shell/lock.toml`, created with the defaults the first time the
+lock starts:
 
 ```toml
-pam = "login"   # the PAM service the password is checked against
+# The PAM service the password is checked against, a file in /etc/pam.d.
+pam = "login"
 ```
 
 The colors come from `~/.config/twilight-shell/theme.toml` (see

@@ -33,12 +33,15 @@ Scope {
         id: config
 
         name: "lock"
+        defaults: Qt.resolvedUrl("lock.defaults.toml")
     }
 
     Auth {
         id: login
 
         dry: root.preview
+        // The fallback stays: if the defaults file can't be read, the password
+        // must still be checked or nobody could unlock.
         service: config.get("pam", "login")
         onUnlocked: root.preview ? root.unlocked() : root.finish()
     }

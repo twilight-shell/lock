@@ -1,0 +1,2 @@
+# The PAM service the password is checked against, a file in /etc/pam.d.
+pam = "login"
