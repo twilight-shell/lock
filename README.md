@@ -1,5 +1,7 @@
 # twilight-shell/lock
 
+[![ci](https://github.com/twilight-shell/lock/actions/workflows/ci.yml/badge.svg)](https://github.com/twilight-shell/lock/actions/workflows/ci.yml)
+
 The lock screen of the [twilight-shell](https://github.com/twilight-shell)
 organization: a night sky, a rolling clock with the date and the moon, and a card
 where the password is typed as a row of stars. It locks the session with the
@@ -71,6 +73,10 @@ pam = "login"
 
 The colors come from `~/.config/twilight-shell/theme.toml` (see
 [core](https://github.com/twilight-shell/core)).
+
+## Contributing
+
+Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Agents and the like: [AGENTS.md](AGENTS.md).
 
 ## License
 
